@@ -12,5 +12,5 @@ CREATE TABLE assignment_submissions (
   assignment_id INTEGER NOT NULL REFERENCES assignments(id),
   student_id INTEGER NOT NULL REFERENCES students(id),
   submission_date DATE NOT NULL,
-  duration NUMERIC NOT NULL
+  duration INTEGER NOT NULL
 );
